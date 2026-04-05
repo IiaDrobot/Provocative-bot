@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  provocative_bot:
+    build: .
+    container_name: provocative_bot
+    restart: always
+    env_file:
+      - .env

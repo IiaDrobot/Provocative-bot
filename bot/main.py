@@ -2,7 +2,7 @@ import os
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler
 from bot.handlers import start, handle_buttons
 
-ADMIN_ID = int(os.environ.get("ADMIN_ID"))
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "0"))
 completed_users = set()
 
 async def stats(update, context):
